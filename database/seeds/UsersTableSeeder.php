@@ -17,7 +17,7 @@ class UsersTableSeeder extends Seeder
                 [
                     'first_name' => "Super",
                     'last_name' => "Administrator",
-                    'email' => 'superadmin@think.web.id',
+                    'email' => 'superadmin@utmostphere.com',
                     'password' => bcrypt('password'),
                     "gender" => 1,
                     "dob" => date('Y-m-d'),
@@ -32,7 +32,7 @@ class UsersTableSeeder extends Seeder
                 [
                     'first_name' => "Admin",
                     'last_name' => "Administrator",
-                    'email' => 'admin@think.web.id',
+                    'email' => 'admin@utmostphere.com',
                     'password' => bcrypt('password'),
                     "gender" => 1,
                     "dob" => date('Y-m-d'),
@@ -47,7 +47,7 @@ class UsersTableSeeder extends Seeder
                 [
                     'first_name' => "Admin",
                     'last_name' => "Operator",
-                    'email' => 'operator@think.web.id',
+                    'email' => 'operator@utmostphere.com',
                     'password' => bcrypt('password'),
                     "gender" => 1,
                     "dob" => date('Y-m-d'),
@@ -62,7 +62,7 @@ class UsersTableSeeder extends Seeder
                 [
                     'first_name' => "Admin",
                     'last_name' => "Finance",
-                    'email' => 'finance@think.web.id',
+                    'email' => 'finance@utmostphere.com',
                     'password' => bcrypt('password'),
                     "gender" => 1,
                     "dob" => date('Y-m-d'),
@@ -77,7 +77,7 @@ class UsersTableSeeder extends Seeder
                 [
                     'first_name' => "Admin",
                     'last_name' => "Reporter",
-                    'email' => 'report@think.web.id',
+                    'email' => 'report@utmostphere.com',
                     'password' => bcrypt('password'),
                     "gender" => 1,
                     "dob" => date('Y-m-d'),

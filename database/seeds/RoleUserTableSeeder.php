@@ -14,23 +14,23 @@ class RoleUserTableSeeder extends Seeder
     {
         $data = [
             [
-                'email' => 'superadmin@think.web.id',
+                'email' => 'superadmin@utmostphere.com',
                 'role' => 'sup'
             ],
             [
-                'email' => 'admin@think.web.id',
+                'email' => 'admin@utmostphere.com',
                 'role' => 'adm'
             ],
             [
-                'email' => 'operator@think.web.id',
+                'email' => 'operator@utmostphere.com',
                 'role' => 'opr'
             ],
             [
-                'email' => 'finance@think.web.id',
+                'email' => 'finance@utmostphere.com',
                 'role' => 'fnc'
             ],
             [
-                'email' => 'report@think.web.id',
+                'email' => 'report@utmostphere.com',
                 'role' => 'rpt'
             ]
         ];
