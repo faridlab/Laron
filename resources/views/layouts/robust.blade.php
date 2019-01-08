@@ -6,9 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
   <!-- CSRF Token -->
   <meta name="csrf-token" content="{{ csrf_token() }}">
-  <title>{{ config('app.name', 'broKOLi') }}</title>
+  <title>{{ config('app.name', 'Laron') }}</title>
 
-  <meta name="description" content="broKOLi is powerfull web application for managing key Opinion Leaders">
+  <meta name="description" content="Laron is powerfull web application for managing key Opinion Leaders">
   <meta name="keywords" content="KOL, Key Opinion Leaders, Social Media, Buzzer">
   <meta name="author" content="Appnomali | Utmostphere">
   <link rel="apple-touch-icon" href="{{asset('app-assets/images/ico/apple-icon-120.png')}}">

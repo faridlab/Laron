@@ -6,7 +6,7 @@
               class="ft-menu font-large-1"></i></a></li>
         <li class="nav-item">
           <a class="navbar-brand" href="">
-            <img class="brand-logo" alt="broKOLi" src="../../../app-assets/images/logo/logo-dark-sm.png">
+            <img class="brand-logo" alt="Laron" src="../../../app-assets/images/logo/logo-dark-sm.png">
             <h3 class="brand-text">KOL</h3>
           </a>
         </li>
