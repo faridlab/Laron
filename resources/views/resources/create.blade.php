@@ -1,4 +1,4 @@
-@extends('layouts.robust')
+@extends('layouts.bootstrap')
 
 @section('content')
 <div class="content-header row">
