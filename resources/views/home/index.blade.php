@@ -1,7 +1,4 @@
-@extends('layouts.robust')
-@section('css')
-<link rel="stylesheet" type="text/css" href="{{asset('app-assets/vendors/css/extensions/sweetalert.css')}}">
-@endsection
+@extends('layouts.bootstrap')
 @section('content')
 <div class="content-header row">
   <div class="breadcrumb-wrapper col-8">
@@ -16,12 +13,12 @@
     </ol>
   </div>
   <div class="content-header-right text-md-right col-4">
+    <a href="{{url(Request::segment(1).'/create')}}" class="btn btn-light text-success"><span data-feather="plus"></span> New</a>
     <div class="btn-group">
-      <button class="btn btn-round"><a href="{{url(Request::segment(1).'/create')}}" class="text-dark"><i class="fa fa-plus"></i> New</a></button>
-      <button class="btn btn-round"><a href="#filter" class="text-dark"><i class="fa fa-filter"></i> Filter</a></button>
-      <button class="btn btn-round"><a href="#export" class="text-dark"><i class="fa fa-upload"></i> Export</a></button>
-      <button class="btn btn-round"><a href="{{url(Request::segment(1).'/trash')}}" class="text-danger"><i class="fa fa-trash"></i> Trash</a></button>
+      <a href="#export" class="btn btn-light text-dark"><span data-feather="upload"></span></a>
+      <a href="#import" class="btn btn-light text-dark"><span data-feather="download"></span></a>
     </div>
+    <a href="{{url(Request::segment(1).'/trash')}}" class="btn btn-light text-danger"><span data-feather="trash"></span> Trash</a>
   </div>
 </div>
 
@@ -62,52 +59,4 @@
 @endsection
 
 @section('js')
-<script src="{{asset('app-assets/vendors/js/tables/datatable/datatables.min.js')}}" type="text/javascript"></script>
-<script src="{{asset('app-assets/vendors/js/extensions/sweetalert.min.js')}}" type="text/javascript"></script>
-<script>
-$(document).ready(function() {
-
-  $(document).on('click', '.form-delete', function() {
-
-    var id = $(this).data('id');
-    if(!id) return;
-
-    swal({
-      title: "Are you sure?",
-      text: "Are you sure want to delete this data?",
-      icon: "warning",
-      buttons: true,
-      dangerMode: true,
-    })
-    .then((willDelete) => {
-      if (willDelete) {
-        $('#form-delete').attr('action', '{{url($segments[0])}}/'+id);
-        $('#form-delete').submit();
-      }
-    });
-  });
-
-  @if (session('success'))
-    swal("Success!", "{{session('success')}}", "success");
-  @endif
-
-  @if (session('info'))
-    swal("Info!", "{{session('info')}}", "info");
-  @endif
-
-  @if (session('warning'))
-    swal("Warning!", "{{session('warning')}}", "warning");
-  @endif
-
-  @if (session('error'))
-    swal("Error!", "{{session('error')}}", "error");
-  @endif
-
-  // $('.default-ordering').DataTable( {
-  //   order: [],
-  //   columnDefs: [{ orderable: false, targets: -1 }]
-  // });
-
-});
-</script>
 @endsection
