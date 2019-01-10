@@ -150,6 +150,8 @@
 
       <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4 mt-5">
         @yield('content')
+        <!-- FOOTER -->
+        @include('layouts.footer')
       </main>
     </div>
   </div>
